@@ -15,7 +15,7 @@ if ! command -v curl &> /dev/null; then
 fi
 
 echo "Downloading binary from: $URL..."
-curl -L "$URL" -o "$INSTALL_DIR"
+curl -L "$URL" -o "$INSTALL_DIR/rsm"
 chmod +x "$INSTALL_DIR/$NAME"
 
 echo "Done. You can run the program by typing: $NAME."
