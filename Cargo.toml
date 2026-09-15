@@ -1,7 +1,10 @@
 [package]
-name = "rsm"
+name = "rust-system-monitor"
 version = "1.0.0"
 edition = "2024"
+description = "Simple and lightweight resource monitor"
+license = "MIT"
+repository = "https://github.com/r3nzgmd/rsm"
 
 [dependencies]
 ratatui = "0.30.2"
