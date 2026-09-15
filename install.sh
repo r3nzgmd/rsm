@@ -4,7 +4,7 @@ set -e
 
 URL="https://github.com/r3nzgmd/rsm/releases/download/v1.0.0/rsm-linux"
 NAME="rsm"
-INSTALL_DIR="/usr/local/bin"
+INSTALL_DIR="/usr/local/bin/$NAME"
 
 if [ "$EUID" -ne 0 ]; then
 	echo "Error: Run this script with sudo."
@@ -17,7 +17,7 @@ if ! command -v curl &> /dev/null; then
 fi
 
 echo "Downloading binary from: $URL..."
-curl -L "$URL" -o "$INSTALL_DIR/$NAME"
-chmod +x "$INSTALL_DIR/$NAME"
+curl -L "$URL" -o "$INSTALL_DIR"
+chmod +x "$INSTALL_DIR"
 
 echo "Done. You can run the program by typing: $NAME."
