@@ -1,4 +1,3 @@
-# script used to clone git repository into home directory and build the app using Cargo
 set -e
 
 if ! command -v git &> /dev/null; then
