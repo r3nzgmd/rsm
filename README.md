@@ -32,4 +32,4 @@ curl -fsSL https://raw.githubusercontent.com/r3nzgmd/rsm/main/compile.sh | sh
 ```
 
 ## Screenshots
-![alt](src)
+![Showcase](img/showcase.png)
