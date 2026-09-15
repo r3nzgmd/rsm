@@ -1,0 +1,20 @@
+[package]
+name = "rsm"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+ratatui = "0.30.2"
+color-eyre = "0.6.3"
+crossterm = "0.29.0"
+sysinfo = "0.39.6"
+chrono = "0.4.45"
+arc-swap = "1.9.2"
+
+# compiler optimizations
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
