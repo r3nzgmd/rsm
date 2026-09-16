@@ -15,6 +15,8 @@ If you have Rust installed, you can install it using Cargo:
 ```bash  
 cargo install rust-system-monitor
 ```
+**Note:** the installed binary name is `rsm`, not `rust-system-monitor`.
+
 ### Linux
 You can download and run the installation script by pasting this command:
 ```bash
@@ -24,14 +26,14 @@ Then, open the program by typing:
 ```bash
 rsm
 ```
-Note: make sure you have the folder `/usr/local/bin` added to PATH.
+**Note:** make sure you have the folder `/usr/local/bin` added to PATH.
 
 ### Windows
 Open `cmd` and paste in this command:
 ```bash
 curl -fL "https://github.com/r3nzgmd/rsm/releases/download/v1.0.0/rsm-windows.exe" -o "%USERPROFILE%/Downloads/rsm.exe"
 ```
-Note: file `rsm.exe` will end up in your Downloads folder.
+**Note:** file `rsm.exe` will end up in your Downloads folder.
 
 ## Compilation
 If you want to compile the code yourself on your machine, you will need `rustc v1.97.1` or later. Then, run this command to clone the repository and build from source code:
